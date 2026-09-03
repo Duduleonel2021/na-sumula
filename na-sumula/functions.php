@@ -37,6 +37,7 @@ $mdc_core_files = array(
 	'inc/mdc-seo.php',
 	'inc/mdc-migrations.php',
 	'inc/helpers.php',
+	'inc/mdc-missing-functions.php',
 	'inc/artigo.php',
 	'inc/mdc-cpts.php',
 	'inc/mdc-taxonomias.php',
