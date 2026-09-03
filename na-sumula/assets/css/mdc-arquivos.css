@@ -1,0 +1,340 @@
+/* =========================================================
+   NA SÚMULA — ARQUIVOS
+   Layout editorial dos arquivos de Copas, seleções, jogadores,
+   estádios e entidades.
+   ========================================================= */
+
+.ns-site.mdc-archive-page .mdc-global-breadcrumb {
+    display: none !important;
+}
+
+/* Hero */
+.ns-site.mdc-archive-page .mdc-archive-hero {
+    padding: 42px 0 38px;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-hero .mdc-section-kicker {
+    margin-bottom: 10px;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-hero h1 {
+    margin-top: 0;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-hero p {
+    max-width: 780px;
+    margin-top: 14px;
+}
+
+/* Filtros */
+.ns-site.mdc-archive-page .mdc-archive-filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+    margin-top: 26px;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-filter__label {
+    color: rgba(255,255,255,.62);
+    font: 800 10px/1 Inter, sans-serif;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-filter__buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px;
+    border: 1px solid rgba(255,255,255,.18);
+    border-radius: 999px;
+    background: rgba(255,255,255,.035);
+}
+
+.ns-site.mdc-archive-page .mdc-archive-filter__buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 0 17px;
+    border-radius: 999px;
+    color: rgba(255,255,255,.78) !important;
+    font: 800 11px/1 Inter, sans-serif;
+    text-decoration: none;
+    transition: background .18s ease, color .18s ease, transform .18s ease;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-filter__buttons a:hover {
+    color: #fff !important;
+    background: rgba(255,255,255,.10);
+    transform: translateY(-1px);
+}
+
+.ns-site.mdc-archive-page .mdc-archive-filter__buttons a.is-current {
+    background: #fff;
+    color: #C83A32 !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,.16);
+}
+
+/* Área principal + sidebar */
+.ns-site.mdc-archive-page .mdc-section--archive-results {
+    padding: 52px 0 72px;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 300px);
+    gap: 32px;
+    align-items: start;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-main {
+    min-width: 0;
+}
+
+.ns-site.mdc-archive-page .mdc-archive-sidebar {
+    min-width: 0;
+    position: sticky;
+    top: 24px;
+}
+
+/* 4 colunas: 12 itens = 4 x 3 */
+.ns-site.mdc-archive-page .mdc-entity-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 5px 16px rgba(0,0,0,.045);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card:hover {
+    transform: translateY(-3px);
+    border-color: #cfcfcf;
+    box-shadow: 0 12px 28px rgba(0,0,0,.09);
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__media {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card--copa .mdc-entity-card__media,
+.ns-site.mdc-archive-page .mdc-entity-card--poster .mdc-entity-card__media {
+    aspect-ratio: 3 / 4;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card--copa .mdc-entity-card__media img,
+.ns-site.mdc-archive-page .mdc-entity-card--poster .mdc-entity-card__media img {
+    object-fit: contain;
+    background: #f2f2f2;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__body {
+    min-width: 0;
+    padding: 13px 14px 16px;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__body .mdc-kicker {
+    font-size: .62rem;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__body h3 {
+    margin-top: 6px;
+    font-size: .93rem;
+    line-height: 1.2;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__sub {
+    display: block;
+    margin-top: 5px;
+    color: #757575;
+    font-size: .68rem;
+}
+
+/* Card especial das Copas */
+.ns-site.mdc-archive-page .mdc-entity-card__country {
+    display: block;
+    margin-bottom: 5px;
+    color: #009B4D;
+    font: 800 .66rem/1.1 Inter, sans-serif;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+
+.ns-site.mdc-archive-page .mdc-entity-card__copa-title {
+    margin: 0;
+    color: #111;
+    font: 800 1.02rem/1.16 Manrope, sans-serif;
+    letter-spacing: -.025em;
+}
+
+/* Sidebar */
+.ns-site.mdc-archive-page .mdc-sidebar-card {
+    padding: 22px;
+    border: 1px solid #dedede;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 5px 18px rgba(0,0,0,.045);
+}
+
+.ns-site.mdc-archive-page .mdc-sidebar-card h2 {
+    margin-top: 10px;
+    font-size: 1.15rem;
+}
+
+.ns-site.mdc-archive-page .mdc-sidebar-card nav {
+    display: grid;
+    margin-top: 16px;
+}
+
+.ns-site.mdc-archive-page .mdc-sidebar-card nav a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    color: #111;
+    font-size: .8rem;
+    font-weight: 800;
+}
+
+.ns-site.mdc-archive-page .mdc-sidebar-card nav a span {
+    color: #C83A32;
+}
+
+/* Paginação */
+.ns-site.mdc-archive-page .mdc-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+
+.ns-site.mdc-archive-page .mdc-pagination .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.ns-site.mdc-archive-page .mdc-pagination .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 36px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    font: 800 11px/1 Inter, sans-serif;
+}
+
+.ns-site.mdc-archive-page .mdc-pagination .page-numbers.current {
+    border-color: #C83A32;
+    background: #C83A32;
+    color: #fff;
+}
+
+.ns-site.mdc-archive-page .mdc-pagination .page-numbers:hover {
+    border-color: #C83A32;
+    color: #C83A32;
+}
+
+.ns-site.mdc-archive-page .mdc-pagination .page-numbers.current:hover {
+    color: #fff;
+}
+
+/* Tablets */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ns-site.mdc-archive-page .mdc-archive-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(220px, 270px);
+        gap: 24px;
+    }
+
+    .ns-site.mdc-archive-page .mdc-entity-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .ns-site.mdc-archive-page .mdc-archive-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .ns-site.mdc-archive-page .mdc-archive-sidebar {
+        position: static;
+    }
+
+    .ns-site.mdc-archive-page .mdc-entity-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .ns-site.mdc-archive-page .mdc-archive-hero {
+        padding: 30px 0 32px;
+    }
+
+    .ns-site.mdc-archive-page .mdc-archive-filter {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .ns-site.mdc-archive-page .mdc-archive-filter__buttons {
+        max-width: 100%;
+    }
+
+    .ns-site.mdc-archive-page .mdc-section--archive-results {
+        padding: 34px 0 52px;
+    }
+
+    .ns-site.mdc-archive-page .mdc-archive-layout {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .ns-site.mdc-archive-page .mdc-archive-sidebar {
+        position: static;
+        order: 2;
+    }
+
+    .ns-site.mdc-archive-page .mdc-entity-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+    }
+
+    .ns-site.mdc-archive-page .mdc-entity-card__body {
+        padding: 11px 12px 14px;
+    }
+
+    .ns-site.mdc-archive-page .mdc-entity-card__body h3,
+    .ns-site.mdc-archive-page .mdc-entity-card__copa-title {
+        font-size: .84rem;
+    }
+}
+
+@media (max-width: 479px) {
+    .ns-site.mdc-archive-page .mdc-entity-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
